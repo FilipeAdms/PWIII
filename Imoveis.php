@@ -34,5 +34,19 @@
     echo $Imovel01->regiao . "\n</br>";
     echo $Imovel01->valor . "\n</br>";
    
+    class Rural extends Imoveis{
+        
+        public function __construct($valor){
+            $this->valor = $valor;
+        }
+
+        function teste(){
+            $this->valor;
+        }
+        
+    }
+        $Imovel02 = new Rural(652);
+        $Imovel02->valor;
+        echo $Imovel02->valor . "\n";
 
 ?>
